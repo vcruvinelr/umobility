@@ -79,7 +79,7 @@
                 </div>
             @endif
 
-            <div id="app" class="content">
+            <div id="main" class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
@@ -102,4 +102,5 @@
 </html>
 
 <script src="js/app.js"></script>
+<script src="/js/index.vue.js"></script>
 
