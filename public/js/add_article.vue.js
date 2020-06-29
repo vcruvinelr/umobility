@@ -137,7 +137,6 @@ __webpack_require__.r(__webpack_exports__);
         name: this.name
       }).then(function (response) {
         currentObj.output = response.data;
-        console.log(currentObj);
       })["catch"](function (error) {
         currentObj.output = error;
       });
@@ -417,6 +416,9 @@ __webpack_require__.r(__webpack_exports__);
 
 new Vue({
   el: '#article',
+  data: {
+    output: ''
+  },
   components: {
     addArticles: _components_AddArticle_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },

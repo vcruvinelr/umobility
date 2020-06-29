@@ -21,7 +21,7 @@ class ArticlesController extends Controller
             $article->name = $request->name;
             $article->save();
     
-            return response()->json($article);
+            return response($article);
         }
 
     }

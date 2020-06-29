@@ -42,7 +42,6 @@
                 })
                 .then(function (response) {
                     currentObj.output = response.data;
-                    console.log(currentObj)
                 })
                 .catch(function (error) {
                     currentObj.output = error;
