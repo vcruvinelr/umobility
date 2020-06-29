@@ -9,9 +9,20 @@ class ArticlesController extends Controller
 
 {
     public function getAllArticles(){
-        $articles = Article::all();
         
-        return view('articles', compact('articles'));
+        return view('articles.articles');
+
+    }
+
+    public function addArticle(Request $request){
+
+        {
+            $article = new Article;
+            $article->name = $request->name;
+            $article->save();
+    
+            return response()->json($article);
+        }
 
     }
 }

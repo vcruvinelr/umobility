@@ -6,10 +6,10 @@
         
         <main class="">
             <div id="app">
-            @section('sidebar')
             <navbar></navbar>
-                @yield('content')
             </div>
+            @section('sidebar')
+            @yield('content')
         </main>
 
     

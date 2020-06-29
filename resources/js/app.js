@@ -38,6 +38,7 @@ Vue.use(Vuesax, {
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('navbar', require('./components/NavBar.vue').default);
+//Vue.component('add-article', require('./components/AddArticle.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -47,3 +48,4 @@ Vue.component('navbar', require('./components/NavBar.vue').default);
 const app = new Vue({
     el: '#app',
 });
+
