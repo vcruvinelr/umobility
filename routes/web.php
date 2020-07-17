@@ -13,18 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('locale/{locale}', function ($locale){
     Session::put('locale', $locale);
     return redirect()->back();
 });
-
 Route::get('/', function () {
     return view('home');
 });
-
-
-Auth::routes();
-
 Route::get('home', 'HomeController@index')->name('home');
 Route::get('articles', 'ArticlesController@getAllArticles');
 Route::post('articles', 'ArticlesController@addArticle');

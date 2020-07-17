@@ -227,7 +227,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   "pt": {
     "navbar": {
-      "home": "Acessar Home"
+      "home": "Acessar Home",
+      "about": "Sobre"
     },
     "main": {
       "title": "uMobility"
