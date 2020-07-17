@@ -8,11 +8,23 @@
         #mapid { height: 360px; }
    </style>
 @section('content')
+
     <div id="main">
-        <h1>This is my body content.</h1>
-        <b-button variant="danger">Button</b-button>
-        <div id="mapid"></div>
+        <carousel></carousel>
+        <b-container class="bv-example-row">
+            <b-row>
+                <b-col><h1>This is my body content.</h1></b-col>
+                <b-col cols="8"><h1>This is my body content.</h1></b-col>
+                <b-col><h1>This is my body content.</h1></b-col>
+            </b-row>
+            <b-row>
+                <b-col></b-col>
+                <b-col cols="8"><div class="col-6" id="mapid"></div></b-col>
+                <b-col></b-col>
+            </b-row>
+        </b-container>
     </div>
+
 @endsection
 
 @push('scripts')

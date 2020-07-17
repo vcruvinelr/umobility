@@ -30,6 +30,7 @@
         "esri-loader": "^2.14.0",
         "leaflet": "^1.6.0",
         "material-icons": "^0.3.1",
+        "vue-i18n": "^8.18.2",
         "vue2-leaflet": "^2.5.2",
         "vuesax": "^3.11.17"
     }

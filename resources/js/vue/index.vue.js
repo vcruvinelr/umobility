@@ -1,6 +1,10 @@
+import Carousel from '../components/Carousel.vue';
+
 const app = new Vue({
     el: '#main',
-    components: {},
+    components: {
+        Carousel
+    },
     data: {
         map: {
             apiTileLayer: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',

@@ -2,5 +2,6 @@
     "/js/add_article.vue.js": "/js/add_article.vue.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/index.vue.js": "/js/index.vue.js"
+    "/js/index.vue.js": "/js/index.vue.js",
+    "/js/vue-i18n-locales.generated.js": "/js/vue-i18n-locales.generated.js"
 }

@@ -14,6 +14,20 @@ import 'leaflet/dist/leaflet.css';
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 import 'material-icons/iconfont/material-icons.css';
+import Vue from 'vue';
+import VueInternationalization from 'vue-i18n';
+import Locale from './vue-i18n-locales.generated';
+
+Vue.use(VueInternationalization)
+
+const lang = localStorage.getItem('locale') || 'pt';
+
+const i18n = new VueInternationalization({
+    locale: lang,
+    messages: Locale
+});
+
+
 
 Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
@@ -47,5 +61,6 @@ Vue.component('navbar', require('./components/NavBar.vue').default);
 
 const app = new Vue({
     el: '#app',
+    i18n
 });
 
